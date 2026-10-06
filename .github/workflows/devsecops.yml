@@ -173,14 +173,14 @@ jobs:
       - name: Build and tag image
         run: |
           docker build \
-            -t nensiravaliya28/hey-cicd:${{ github.sha }} \
-            -t nensiravaliya28/hey-cicd:latest \
+            -t srujangowda07/hey-cicd:${{ github.sha }} \
+            -t srujangowda07/hey-cicd:latest \
             .
 
       - name: Push image
         run: |
-          docker push nensiravaliya28/hey-cicd:${{ github.sha }}
-          docker push nensiravaliya28/hey-cicd:latest
+          docker push srujangowda07/hey-cicd:${{ github.sha }}
+          docker push srujangowda07/hey-cicd:latest
 
 
   # ========================================
